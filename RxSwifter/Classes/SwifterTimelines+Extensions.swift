@@ -15,8 +15,8 @@ public extension Swifter {
                                         maxID: String? = nil,
                                         trimUser: Bool? = nil,
                                         contributorDetails: Bool? = nil,
-                                        includeEntities: Bool? = nil) -> Observable<JSON> {
-    return Observable<JSON>.create({ [weak self] (observer) -> Disposable in
+                                        includeEntities: Bool? = nil) -> Observable<Success> {
+    return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getMentionsTimelineTweets(count: count,
                                       sinceID: sinceID,
                                       maxID: maxID,
@@ -35,8 +35,8 @@ public extension Swifter {
                           maxID: String? = nil,
                           trimUser: Bool? = nil,
                           contributorDetails: Bool? = nil,
-                          includeEntities: Bool? = nil) -> Observable<JSON> {
-    return Observable<JSON>.create({ [weak self] (observer) -> Disposable in
+                          includeEntities: Bool? = nil) -> Observable<Success> {
+    return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getTimeline(for: userID,
                         count: count,
                         sinceID: sinceID,
@@ -55,8 +55,8 @@ public extension Swifter {
                               maxID: String? = nil,
                               trimUser: Bool? = nil,
                               contributorDetails: Bool? = nil,
-                              includeEntities: Bool? = nil) -> Observable<JSON> {
-    return Observable<JSON>.create({ [weak self] (observer) -> Disposable in
+                              includeEntities: Bool? = nil) -> Observable<Success> {
+    return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getHomeTimeline(count: count,
                             sinceID: sinceID,
                             maxID: maxID,
@@ -74,8 +74,8 @@ public extension Swifter {
                               maxID: String? = nil,
                               trimUser: Bool? = nil,
                               contributorDetails: Bool? = nil,
-                              includeEntities: Bool? = nil) -> Observable<JSON> {
-    return Observable<JSON>.create({ [weak self] (observer) -> Disposable in
+                              includeEntities: Bool? = nil) -> Observable<Success> {
+    return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getRetweetsOfMe(count: count,
                             sinceID: sinceID,
                             maxID: maxID,
