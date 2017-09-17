@@ -33,7 +33,7 @@ pod 'RxSwifter'
 - [ ] places
 - [ ] saved searches
 - [x] search
-- [ ] spam
+- [x] spam
 - [ ] streaming
 - [x] suggested
 - [x] timeline
