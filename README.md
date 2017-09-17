@@ -25,7 +25,7 @@ pod 'RxSwifter'
 
 ## TODO
 - [ ] auth
-- [ ] favorite
+- [x] favorite
 - [ ] followers
 - [ ] help
 - [ ] lists
