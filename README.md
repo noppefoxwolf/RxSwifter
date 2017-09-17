@@ -1,6 +1,9 @@
+# RxSwfiter
+
+Wrapper library of Swifter using RxSwift.
+
 # RxSwifter
 
-[![CI Status](http://img.shields.io/travis/🦊Tomoya Hirano/RxSwifter.svg?style=flat)](https://travis-ci.org/🦊Tomoya Hirano/RxSwifter)
 [![Version](https://img.shields.io/cocoapods/v/RxSwifter.svg?style=flat)](http://cocoapods.org/pods/RxSwifter)
 [![License](https://img.shields.io/cocoapods/l/RxSwifter.svg?style=flat)](http://cocoapods.org/pods/RxSwifter)
 [![Platform](https://img.shields.io/cocoapods/p/RxSwifter.svg?style=flat)](http://cocoapods.org/pods/RxSwifter)
