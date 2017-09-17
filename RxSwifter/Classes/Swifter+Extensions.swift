@@ -11,5 +11,6 @@ import Swifter
 extension Swifter {
   public typealias Success = JSON
   public typealias CursorSuccess = (JSON, String?, String?) // json, previousCursor, nextCursor
+  public typealias SearchMetadatsSuccess = (JSON, JSON) // json, searchMetadata
   public typealias JSONSuccess = (JSON, HTTPURLResponse) // json, response
 }

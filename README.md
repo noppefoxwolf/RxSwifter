@@ -29,7 +29,7 @@ pod 'RxSwifter'
 - [ ] messages
 - [ ] places
 - [ ] saved searches
-- [ ] search
+- [x] search
 - [ ] spam
 - [ ] streaming
 - [ ] suggested
