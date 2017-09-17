@@ -20,10 +20,36 @@ it, simply add the following line to your Podfile:
 pod 'RxSwifter'
 ```
 
+## TODO
+- [ ] auth
+- [ ] favorite
+- [ ] followers
+- [ ] help
+- [ ] lists
+- [ ] messages
+- [ ] places
+- [ ] saved searches
+- [ ] search
+- [ ] spam
+- [ ] streaming
+- [ ] suggested
+- [ ] tag
+- [x] timeline
+- [ ] trends
+- [ ] tweets
+- [ ] users
+- [ ] undocumented
+
 ## Author
 
-🦊Tomoya Hirano, tomoya.hirano@dena.com
+🦊Tomoya Hirano, noppelabs@gmail.com
+
+## Dependency
+
+Swifter https://github.com/mattdonnelly/Swifter
+RxSwift https://github.com/ReactiveX/RxSwift
 
 ## License
 
 RxSwifter is available under the MIT license. See the LICENSE file for more info.
+
