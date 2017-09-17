@@ -32,8 +32,7 @@ pod 'RxSwifter'
 - [x] search
 - [ ] spam
 - [ ] streaming
-- [ ] suggested
-- [ ] tag
+- [x] suggested
 - [x] timeline
 - [ ] trends
 - [x] tweets
