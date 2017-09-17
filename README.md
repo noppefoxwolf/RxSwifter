@@ -27,7 +27,7 @@ pod 'RxSwifter'
 - [ ] auth
 - [x] favorite
 - [x] followers
-- [ ] help
+- [x] help
 - [ ] lists
 - [ ] messages
 - [ ] places
