@@ -1,15 +1,16 @@
 Pod::Spec.new do |s|
   s.name             = 'RxSwifter'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RxSwifter.'
+  s.summary          = 'Wrapper library of Swifter using RxSwift.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Wrapper library of Swifter using RxSwift.
+Provide observable response.
                        DESC
 
-  s.homepage         = 'https://github.com/🦊Tomoya Hirano/RxSwifter'
+  s.homepage         = 'https://github.com/noppefoxwolf/RxSwifter'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '🦊Tomoya Hirano' => 'noppelabs@gmail.com' }
-  s.source           = { :git => 'https://github.com/🦊Tomoya Hirano/RxSwifter.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/noppefoxwolf/RxSwifter.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
 
