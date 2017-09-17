@@ -37,7 +37,7 @@ pod 'RxSwifter'
 - [x] timeline
 - [ ] trends
 - [ ] tweets
-- [ ] users
+- [x] users
 - [ ] undocumented
 
 ## Author
