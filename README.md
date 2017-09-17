@@ -36,7 +36,7 @@ pod 'RxSwifter'
 - [ ] tag
 - [x] timeline
 - [ ] trends
-- [ ] tweets
+- [x] tweets
 - [x] users
 - [ ] undocumented
 
