@@ -37,7 +37,7 @@ pod 'RxSwifter'
 - [ ] streaming
 - [x] suggested
 - [x] timeline
-- [ ] trends
+- [x] trends
 - [x] tweets
 - [x] users
 - [ ] undocumented
