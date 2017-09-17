@@ -30,7 +30,7 @@ pod 'RxSwifter'
 - [x] help
 - [ ] lists
 - [ ] messages
-- [ ] places
+- [x] places
 - [x] saved searches
 - [x] search
 - [x] spam
