@@ -23,6 +23,11 @@ it, simply add the following line to your Podfile:
 pod 'RxSwifter'
 ```
 
+```
+pod 'RxSwifter'
+pod 'Swifter', :git => 'git@github.com:mattdonnelly/Swifter.git', '2.0.2'
+```
+
 ## TODO
 - [x] auth
 - [x] favorite
