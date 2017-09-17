@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxSwifter_Example' do
+  pod 'RxSwifter', :path => '../'
+
+  target 'RxSwifter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
