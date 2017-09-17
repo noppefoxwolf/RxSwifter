@@ -31,7 +31,7 @@ pod 'RxSwifter'
 - [ ] lists
 - [ ] messages
 - [ ] places
-- [ ] saved searches
+- [x] saved searches
 - [x] search
 - [x] spam
 - [ ] streaming
