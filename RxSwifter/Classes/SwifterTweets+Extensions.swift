@@ -54,6 +54,7 @@ public extension Swifter {
                         placeID: Double? = nil,
                         displayCoordinates: Bool? = nil,
                         trimUser: Bool? = nil,
+                        tweetMode: TweetMode,
                         media_ids: [String] = []) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.postTweet(status: status,
@@ -62,7 +63,7 @@ public extension Swifter {
                       placeID: placeID,
                       displayCoordinates: displayCoordinates,
                       trimUser: trimUser,
-                      media_ids: media_ids,
+                      tweetMode: tweetMode,
                       success: { observer.onNext($0); observer.onCompleted() },
                       failure: { observer.onError($0) })
       return Disposables.create()

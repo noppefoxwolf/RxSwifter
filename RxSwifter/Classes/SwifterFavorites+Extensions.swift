@@ -22,7 +22,7 @@ public extension Swifter {
                                           sinceID: String? = nil,
                                           maxID: String? = nil) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.getRecentlyFavouritedTweets(count: count,
+      self?.getRecentlyFavoritedTweets(count: count,
                                         sinceID: sinceID,
                                         maxID: maxID,
                                         success: { observer.onNext($0); observer.onCompleted() },
@@ -36,7 +36,7 @@ public extension Swifter {
                                           sinceID: String? = nil,
                                           maxID: String? = nil) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.getRecentlyFavouritedTweets(for: userTag,
+      self?.getRecentlyFavoritedTweets(for: userTag,
                                         count: count,
                                         sinceID: sinceID,
                                         maxID: maxID,
@@ -48,7 +48,7 @@ public extension Swifter {
   
   public func unfavouriteTweet(forID id: String, includeEntities: Bool? = nil) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.unfavouriteTweet(forID: id,
+      self?.unfavoriteTweet(forID: id,
                              includeEntities: includeEntities,
                              success: { observer.onNext($0); observer.onCompleted() },
                              failure: { observer.onError($0) })
@@ -59,7 +59,7 @@ public extension Swifter {
   public func favouriteTweet(forID id: String,
                              includeEntities: Bool? = nil) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.favouriteTweet(forID: id,
+      self?.favoriteTweet(forID: id,
                              includeEntities: includeEntities,
                              success: { observer.onNext($0); observer.onCompleted() },
                              failure: { observer.onError($0) })

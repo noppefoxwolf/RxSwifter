@@ -1,12 +1,7 @@
 use_frameworks!
+swift_version = '4.0'
 
 target 'RxSwifter_Example' do
   pod 'RxSwifter', :path => '../'
   pod 'Swifter', :git => 'git@github.com:mattdonnelly/Swifter.git'
-
-  target 'RxSwifter_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
