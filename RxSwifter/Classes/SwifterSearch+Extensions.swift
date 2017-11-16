@@ -33,7 +33,7 @@ public extension Swifter {
                         maxID: maxID,
                         includeEntities: includeEntities,
                         callback: callback,
-                        success: { observer.onNext($0); observer.onCompleted() },
+                        success: { observer.onNext(($0, $1)); observer.onCompleted() },
                         failure: { observer.onError($0) })
       return Disposables.create()
     })

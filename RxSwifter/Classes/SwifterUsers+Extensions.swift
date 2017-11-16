@@ -124,7 +124,7 @@ public extension Swifter {
       self?.getBlockedUsers(includeEntities: includeEntities,
                             skipStatus: skipStatus,
                             cursor: cursor,
-                            success: { observer.onNext($0); observer.onCompleted() },
+                            success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                             failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -134,7 +134,7 @@ public extension Swifter {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getBlockedUsersIDs(stringifyIDs: stringifyIDs,
                                cursor: cursor,
-                               success: { observer.onNext($0); observer.onCompleted() },
+                               success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                                failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -254,7 +254,7 @@ public extension Swifter {
   public func getMuteUsersIDs(cursor: String? = nil) -> Observable<CursorSuccess> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getMuteUsersIDs(cursor: cursor,
-                            success: { observer.onNext($0); observer.onCompleted() },
+                            success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                             failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -267,7 +267,7 @@ public extension Swifter {
       self?.getMuteUsers(cursor: cursor,
                          includeEntities: includeEntities,
                          skipStatus: skipStatus,
-                         success: { observer.onNext($0); observer.onCompleted() },
+                         success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                          failure: { observer.onError($0) })
       return Disposables.create()
     })

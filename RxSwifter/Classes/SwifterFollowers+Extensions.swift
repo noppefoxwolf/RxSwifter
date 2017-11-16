@@ -26,7 +26,7 @@ public extension Swifter {
                                 cursor: cursor,
                                 stringifyIDs: stringifyIDs,
                                 count: count,
-                                success: { observer.onNext($0); observer.onCompleted() },
+                                success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                                 failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -38,7 +38,7 @@ public extension Swifter {
                                 cursor: cursor,
                                 stringifyIDs: stringifyIDs,
                                 count: count,
-                                success: { observer.onNext($0); observer.onCompleted() },
+                                success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                                 failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -49,7 +49,7 @@ public extension Swifter {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getIncomingPendingFollowRequests(cursor: cursor,
                                              stringifyIDs: stringifyIDs,
-                                             success: { observer.onNext($0); observer.onCompleted() },
+                                             success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                                              failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -60,7 +60,7 @@ public extension Swifter {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getOutgoingPendingFollowRequests(cursor: cursor,
                                              stringifyIDs: stringifyIDs,
-                                             success: { observer.onNext($0); observer.onCompleted() },
+                                             success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                                              failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -117,7 +117,7 @@ public extension Swifter {
                              count: count,
                              skipStatus: skipStatus,
                              includeUserEntities: includeUserEntities,
-                             success: { observer.onNext($0); observer.onCompleted() },
+                             success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                              failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -134,7 +134,7 @@ public extension Swifter {
                              count: count,
                              skipStatus: skipStatus,
                              includeUserEntities: includeUserEntities,
-                             success: { observer.onNext($0); observer.onCompleted() },
+                             success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                              failure: { observer.onError($0) })
       return Disposables.create()
     })

@@ -34,7 +34,7 @@ public extension Swifter {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.authorize(with: callbackURL,
                       presentFrom: presentingViewController,
-                      success: { observer.onNext($0); observer.onCompleted() },
+                      success: { observer.onNext(($0, $1)); observer.onCompleted() },
                       failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -43,7 +43,7 @@ public extension Swifter {
   
   public func authorizeAppOnly() -> Observable<TokenSuccess> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.authorizeAppOnly(success: { observer.onNext($0); observer.onCompleted() },
+      self?.authorizeAppOnly(success: { observer.onNext(($0, $1)); observer.onCompleted() },
                              failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -51,7 +51,7 @@ public extension Swifter {
   
   public func postOAuth2BearerToken() -> Observable<JSONSuccess> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.postOAuth2BearerToken(success: { observer.onNext($0); observer.onCompleted() },
+      self?.postOAuth2BearerToken(success: { observer.onNext(($0, $1)); observer.onCompleted() },
                                   failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -59,7 +59,7 @@ public extension Swifter {
   
   public func invalidateOAuth2BearerToken() -> Observable<TokenSuccess> {
     return Observable.create({ [weak self] (observer) -> Disposable in
-      self?.invalidateOAuth2BearerToken(success: { observer.onNext($0); observer.onCompleted() },
+      self?.invalidateOAuth2BearerToken(success: { observer.onNext(($0, $1)); observer.onCompleted() },
                                         failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -68,7 +68,7 @@ public extension Swifter {
   public func postOAuthRequestToken(with callbackURL: URL) -> Observable<TokenSuccess> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.postOAuthRequestToken(with: callbackURL,
-                                  success: { observer.onNext($0); observer.onCompleted() },
+                                  success: { observer.onNext(($0, $1)); observer.onCompleted() },
                                   failure: { observer.onError($0) })
       return Disposables.create()
     })
@@ -77,7 +77,7 @@ public extension Swifter {
   public func postOAuthAccessToken(with requestToken: Credential.OAuthAccessToken) -> Observable<TokenSuccess> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.postOAuthAccessToken(with: requestToken,
-                                 success: { observer.onNext($0); observer.onCompleted() },
+                                 success: { observer.onNext(($0, $1)); observer.onCompleted() },
                                  failure: { observer.onError($0) })
       return Disposables.create()
     })

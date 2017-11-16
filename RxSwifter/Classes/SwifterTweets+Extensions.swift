@@ -174,7 +174,7 @@ public extension Swifter {
       self?.tweetRetweeters(forID: id,
                             cursor: cursor,
                             stringifyIDs: stringifyIDs,
-                            success: { observer.onNext($0); observer.onCompleted() },
+                            success: { observer.onNext(($0, $1, $2)); observer.onCompleted() },
                             failure: { observer.onError($0) })
       return Disposables.create()
     })
