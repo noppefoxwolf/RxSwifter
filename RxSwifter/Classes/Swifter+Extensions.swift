@@ -6,7 +6,7 @@
 //
 //
 
-import Swifter
+import SwifteriOS
 
 extension Swifter {
   public typealias Success = JSON

@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-import Swifter
+import SwifteriOS
 
 public extension Swifter {
   public func getTrendsPlace(with woeid: String, excludeHashtags: Bool = false) -> Observable<Success> {

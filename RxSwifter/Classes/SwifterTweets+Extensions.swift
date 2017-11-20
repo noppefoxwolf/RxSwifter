@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-import Swifter
+import SwifteriOS
 
 public extension Swifter {
   public func getRetweets(forTweetID id: String, count: Int? = nil, trimUser: Bool? = nil) -> Observable<Success> {
@@ -56,6 +56,7 @@ public extension Swifter {
                         trimUser: Bool? = nil,
                         tweetMode: TweetMode,
                         media_ids: [String] = []) -> Observable<Success> {
+    
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.postTweet(status: status,
                       inReplyToStatusID: inReplyToStatusID,

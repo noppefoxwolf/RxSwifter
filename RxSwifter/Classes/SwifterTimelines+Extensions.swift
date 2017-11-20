@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-import Swifter
+import SwifteriOS
 
 public extension Swifter {
   public func getMentionsTimelineTweets(count: Int? = nil,

@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-import Swifter
+import SwifteriOS
 
 #if os(iOS)
   import UIKit

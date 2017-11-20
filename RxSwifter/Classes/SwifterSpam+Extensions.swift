@@ -7,7 +7,7 @@
 //
 
 import RxSwift
-import Swifter
+import SwifteriOS
 
 public extension Swifter {
   public func reportSpam(for userTag: UserTag) -> Observable<Success> {
