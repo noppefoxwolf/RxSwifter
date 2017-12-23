@@ -33,7 +33,7 @@ pod 'Swifter', :git => 'git@github.com:mattdonnelly/Swifter.git', '2.0.2'
 - [x] favorite
 - [x] followers
 - [x] help
-- [ ] lists
+- [x] lists
 - [ ] messages
 - [x] places
 - [x] saved searches

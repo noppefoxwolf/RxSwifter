@@ -24,6 +24,7 @@
 		D78D62641FC28D1800C614FF /* SwifterSearch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D62561FC28D1800C614FF /* SwifterSearch+Extensions.swift */; };
 		D78D626A1FC28E7300C614FF /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78D62661FC28D5200C614FF /* SwifteriOS.framework */; };
 		D78D626B1FC28E7300C614FF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78D62671FC28D5200C614FF /* RxSwift.framework */; };
+		D7DD6B631FEE0BDB002721B9 /* SwifterList+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD6B621FEE0BDB002721B9 /* SwifterList+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D78D62561FC28D1800C614FF /* SwifterSearch+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwifterSearch+Extensions.swift"; path = "../../../RxSwifter/Classes/SwifterSearch+Extensions.swift"; sourceTree = "<group>"; };
 		D78D62661FC28D5200C614FF /* SwifteriOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifteriOS.framework; path = ../Build/iOS/SwifteriOS.framework; sourceTree = "<group>"; };
 		D78D62671FC28D5200C614FF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		D7DD6B621FEE0BDB002721B9 /* SwifterList+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwifterList+Extensions.swift"; path = "../../../RxSwifter/Classes/SwifterList+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D78D624B1FC28D1700C614FF /* SwifterSuggested+Extensions.swift */,
 				D78D624E1FC28D1700C614FF /* SwifterTimelines+Extensions.swift */,
 				D78D62491FC28D1700C614FF /* SwifterTrends+Extensions.swift */,
+				D7DD6B621FEE0BDB002721B9 /* SwifterList+Extensions.swift */,
 				D78D624F1FC28D1700C614FF /* SwifterTweets+Extensions.swift */,
 				D78D624C1FC28D1700C614FF /* SwifterUsers+Extensions.swift */,
 				D78D62411FC28D0100C614FF /* RxSwifter.h */,
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78D62621FC28D1800C614FF /* SwifterFollowers+Extensions.swift in Sources */,
+				D7DD6B631FEE0BDB002721B9 /* SwifterList+Extensions.swift in Sources */,
 				D78D62601FC28D1800C614FF /* SwifterPlaces+Extensions.swift in Sources */,
 				D78D62611FC28D1800C614FF /* SwifterFavorites+Extensions.swift in Sources */,
 				D78D625D1FC28D1800C614FF /* SwifterTweets+Extensions.swift in Sources */,

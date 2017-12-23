@@ -18,7 +18,7 @@ public extension Swifter {
    
    If you do not provide either a user_id or screen_name to this method, it will assume you are requesting on behalf of the authenticating user. Specify one or the other for best results.
    */
-  public func getRecentlyFavouritedTweets(count: Int? = nil,
+  public func getRecentlyFavoritedTweets(count: Int? = nil,
                                           sinceID: String? = nil,
                                           maxID: String? = nil) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
@@ -31,7 +31,7 @@ public extension Swifter {
     })
   }
   
-  public func getRecentlyFavouritedTweets(for userTag: UserTag,
+  public func getRecentlyFavoritedTweets(for userTag: UserTag,
                                           count: Int? = nil,
                                           sinceID: String? = nil,
                                           maxID: String? = nil) -> Observable<Success> {
