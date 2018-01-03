@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RxSwifter'
-  s.version          = '0.5.0'
+  s.version          = '0.6.0'
   s.summary          = 'Wrapper library of Swifter using RxSwift.'
   s.description      = <<-DESC
 Wrapper library of Swifter using RxSwift.
