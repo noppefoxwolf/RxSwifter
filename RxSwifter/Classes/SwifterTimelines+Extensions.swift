@@ -15,7 +15,8 @@ public extension Swifter {
                                         maxID: String? = nil,
                                         trimUser: Bool? = nil,
                                         contributorDetails: Bool? = nil,
-                                        includeEntities: Bool? = nil) -> Observable<Success> {
+                                        includeEntities: Bool? = nil,
+                                        tweetMode: TweetMode = .default) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getMentionsTimelineTweets(count: count,
                                       sinceID: sinceID,
@@ -23,6 +24,7 @@ public extension Swifter {
                                       trimUser: trimUser,
                                       contributorDetails: contributorDetails,
                                       includeEntities: includeEntities,
+                                      tweetMode: tweetMode,
                                       success: { observer.onNext($0); observer.onCompleted() },
                                       failure: { observer.onError($0) })
       return Disposables.create()
@@ -35,7 +37,8 @@ public extension Swifter {
                           maxID: String? = nil,
                           trimUser: Bool? = nil,
                           contributorDetails: Bool? = nil,
-                          includeEntities: Bool? = nil) -> Observable<Success> {
+                          includeEntities: Bool? = nil,
+                          tweetMode: TweetMode = .default) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getTimeline(for: userID,
                         count: count,
@@ -44,6 +47,7 @@ public extension Swifter {
                         trimUser: trimUser,
                         contributorDetails: contributorDetails,
                         includeEntities: includeEntities,
+                        tweetMode: tweetMode,
                         success: { observer.onNext($0); observer.onCompleted() },
                         failure: { observer.onError($0) })
       return Disposables.create()
@@ -55,7 +59,8 @@ public extension Swifter {
                               maxID: String? = nil,
                               trimUser: Bool? = nil,
                               contributorDetails: Bool? = nil,
-                              includeEntities: Bool? = nil) -> Observable<Success> {
+                              includeEntities: Bool? = nil,
+                              tweetMode: TweetMode = .default) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getHomeTimeline(count: count,
                             sinceID: sinceID,
@@ -63,6 +68,7 @@ public extension Swifter {
                             trimUser: trimUser,
                             contributorDetails: contributorDetails,
                             includeEntities: includeEntities,
+                            tweetMode: tweetMode,
                             success: { observer.onNext($0); observer.onCompleted() },
                             failure: { observer.onError($0) })
       return Disposables.create()
@@ -74,7 +80,8 @@ public extension Swifter {
                               maxID: String? = nil,
                               trimUser: Bool? = nil,
                               contributorDetails: Bool? = nil,
-                              includeEntities: Bool? = nil) -> Observable<Success> {
+                              includeEntities: Bool? = nil,
+                              tweetMode: TweetMode = .default) -> Observable<Success> {
     return Observable.create({ [weak self] (observer) -> Disposable in
       self?.getRetweetsOfMe(count: count,
                             sinceID: sinceID,
@@ -82,6 +89,7 @@ public extension Swifter {
                             trimUser: trimUser,
                             contributorDetails: contributorDetails,
                             includeEntities: includeEntities,
+                            tweetMode: tweetMode,
                             success: { observer.onNext($0); observer.onCompleted() },
                             failure: { observer.onError($0) })
       return Disposables.create()
